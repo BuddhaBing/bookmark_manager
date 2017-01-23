@@ -18,6 +18,7 @@ group :test do
 end
 
 gem 'data_mapper'
+gem 'dm-postgres-adapter'
 gem 'shotgun'
 gem 'selenium-webdriver'
 gem 'poltergeist'
