@@ -17,7 +17,7 @@ group :test do
   gem 'simplecov', require: false
 end
 
-gem ‘datamapper'
+gem 'data_mapper'
 gem 'shotgun'
 gem 'selenium-webdriver'
 gem 'poltergeist'
