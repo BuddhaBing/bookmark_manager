@@ -3,8 +3,8 @@ feature "Sumbit links" do
     visit 'links/new'
     expect(page.status_code).to eq 200
     fill_in 'url', with: 'http://www.google.co.uk'
-    fill_in 'name', with: 'Google UK'
-    click_button 'submit'
+    fill_in 'title', with: 'Google UK'
+    click_button 'Create link'
     expect(page).to have_content "http://www.google.co.uk"
   end
 end

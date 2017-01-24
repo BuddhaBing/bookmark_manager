@@ -2,18 +2,19 @@
     Add new bookmark
 </h1>
 
-<form method="post" action="/links">
-    <label for="url">URL
+<form action='/links' method='POST'>
+    <label for='title'>
+        Title:
+        <input type='text' name='title'/>
     </label>
-    <input type="text" name="url"></input>
+    <label for='url'>
+        URL:
+        <input type='text' name='url'/>
+    </label>
+    <label for='tags'>
+        Tags:
+        <input type='text' name='tags'/>
+    </label>
+    <input type='submit' value='Create link'/>
 
-    <label for="name">
-        Website name
-    </label>
-    <input type="text" name="name"></input>
-    <label for="tags">
-        Tags: 
-    </label>
-    <input type="text" name="tags"></input>
-    <input type="submit" value="submit"></input>
 </form>

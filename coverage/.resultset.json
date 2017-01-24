@@ -4,8 +4,6 @@
       "/Users/rob/Drive/makers/proper/week4/bookmark_manager/app/app.rb": [
         1,
         1,
-        1,
-        1,
         null,
         1,
         1,
@@ -26,6 +24,7 @@
         2,
         2,
         2,
+        2,
         null,
         null,
         1,
@@ -33,31 +32,6 @@
         null,
         null,
         null,
-        1,
-        null
-      ],
-      "/Users/rob/Drive/makers/proper/week4/bookmark_manager/app/models/link.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/rob/Drive/makers/proper/week4/bookmark_manager/app/models/tag.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
         1,
         null
       ],
@@ -71,6 +45,25 @@
         1,
         1,
         1
+      ],
+      "/Users/rob/Drive/makers/proper/week4/bookmark_manager/app/models/tag.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/rob/Drive/makers/proper/week4/bookmark_manager/app/models/link.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null
       ],
       "/Users/rob/Drive/makers/proper/week4/bookmark_manager/spec/features/adding_tags_spec.rb": [
         1,
@@ -113,6 +106,6 @@
         null
       ]
     },
-    "timestamp": 1485271488
+    "timestamp": 1485272303
   }
 }
