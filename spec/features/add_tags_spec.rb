@@ -5,7 +5,6 @@ feature 'organise links into categories' do
     fill_in 'url', with: 'www.bbc.co.uk'
     fill_in 'tags', with: 'news'
     click_button 'Submit'
-    # expect(page).to have_content 'tags:news'
     link = Link.first
     expect(link.tags.map(&:name)).to include('news')
   end
