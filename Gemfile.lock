@@ -105,6 +105,8 @@ GEM
       tilt (~> 2.0)
     sinatra-flash (0.3.0)
       sinatra (>= 1.0.0)
+    sinatra-partial (0.4.0)
+      sinatra
     stringex (1.5.1)
     templater (1.0.0)
       diff-lcs (>= 1.1.2)
@@ -129,6 +131,7 @@ DEPENDENCIES
   rspec-sinatra
   sinatra (= 2.0.0.beta2)
   sinatra-flash
+  sinatra-partial
 
 RUBY VERSION
    ruby 2.2.3p173
