@@ -13,4 +13,10 @@ module SessionHelpers
         fill_in 'password', with: 'worldsbestpassword'
         click_button 'Sign In'
     end
+
+    def recover_password
+      visit '/users/recover'
+      fill_in :email, with: "mememe@not_a_url.com"
+      click_button "Submit"
+    end
 end

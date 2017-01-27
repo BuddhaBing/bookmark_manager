@@ -12,6 +12,10 @@ class Bookmark_manager < Sinatra::Base
     def current_user
       @current_user ||= User.get(session[:user_id])
     end
+
+    def tags(link)
+      @tags = link.tags.map(&:name).join(', ')
+    end
   end
 
   # start the server if ruby file executed directly
