@@ -32,4 +32,13 @@ feature 'Resetting Password' do
     visit("/users/reset_password?token=#{user.password_token}")
     expect(page).to have_content("Please enter your new password")
   end
+
+  scenario 'it lets you enter a new password with a valid token' do
+    recover_password
+    visit("/users/reset_password?token=#{user.password_token}")
+    fill_in :password, with: "newpassword"
+    fill_in :password_confirmation, with: "newpassword"
+    click_button "Submit"
+    expect(page).to have_content "Please sign in"
+  end
 end
