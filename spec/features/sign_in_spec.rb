@@ -6,9 +6,7 @@ feature 'sign in' do
 
     expect(page.status_code).to eq 200
 
-    fill_in 'email', with: 'mememe@not_a_url.com'
-    fill_in 'password', with: 'worldsbestpassword'
-    click_button 'Sign In'
+    sign_in
 
     expect(current_path).to eq '/links'
     expect(page).to have_content 'Welcome, mememe@not_a_url.com'
