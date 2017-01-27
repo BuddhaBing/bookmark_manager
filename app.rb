@@ -57,6 +57,16 @@ class Bookmark_manager < Sinatra::Base
     end
   end
 
+  get '/sessions/new' do
+    #session[:user_id] = User.first(email: params[:email])
+    erb :'sessions/new'
+  end
+
+  post '/sessions' do
+    session[:user_id] = User.first(email: params[:email])
+    redirect '/links'
+  end
+
   helpers do
     def current_user
       @current_user ||= User.get(session[:user_id])
