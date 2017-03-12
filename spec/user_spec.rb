@@ -1,8 +1,9 @@
 describe User do
+
   before(:each) do
     sign_up
   end
-  
+
   subject(:user) { User.first}
 
 

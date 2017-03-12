@@ -6,12 +6,15 @@ SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 ENV['RACK_ENV'] = 'test'
 
-require File.join(File.dirname(__FILE__), '..', '/lib/app.rb')
+require File.join(File.dirname(__FILE__), '..', 'app/app.rb')
 
 require 'rspec'
 require 'capybara/dsl'
 require 'capybara/poltergeist'
 require 'capybara/rspec'
+require 'database_cleaner'
+require_relative 'helpers/sessionhelpers'
+require_relative 'features/webhelpers'
 
 Capybara.app = BookmarkManager
 Capybara.default_driver = :poltergeist
@@ -57,6 +60,19 @@ RSpec.configure do |config|
     # a real object. This is generally recommended, and will default to
     # `true` in RSpec 4.
     mocks.verify_partial_doubles = true
+  end
+
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :truncation
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.start
+  end
+
+  config.append_after(:each) do
+    DatabaseCleaner.clean
   end
 
 # The settings below are suggested to provide a good initial experience

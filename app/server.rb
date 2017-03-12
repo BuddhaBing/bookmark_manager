@@ -1,4 +1,4 @@
-class Bookmark_manager < Sinatra::Base
+class BookmarkManager < Sinatra::Base
   register Sinatra::Flash
   register Sinatra::Partial
   use Rack::MethodOverride

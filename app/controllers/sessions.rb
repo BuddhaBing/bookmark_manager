@@ -1,4 +1,4 @@
-class Bookmark_manager < Sinatra::Base
+class BookmarkManager < Sinatra::Base
   get '/sessions/new' do
     erb :'sessions/new'
   end
