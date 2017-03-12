@@ -48,12 +48,16 @@ I want the links to be filtered by a tag
 
 ## <a name="install">Installation</a>
 
+***Ensure that you have [PostgreSQL](https://www.postgresql.org/) installed before continuing***
+
 ```
 $ git clone https://github.com/treborb/bookmark_manager.git
 $ cd example
 $ rvm use 2.3.3 --install --binary --fuzzy
 $ gem install bundler
 $ bundle
+$ createdb bookmark_manager_test
+$ createdb bookmark_manager_development
 ```
 
 ## <a name="usage">Usage</a>
