@@ -16,7 +16,7 @@
 * [User Stories](#user-stories)
 * [Installation](#install)
 * [Usage](#usage)
-* [Tests](#tests
+* [Tests](#tests)
 
 ## The Brief
 
