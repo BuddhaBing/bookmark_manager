@@ -1,33 +1,6 @@
-<<<<<<< HEAD
-source 'https://rubygems.org'
-
-ruby '2.3.3'
-
-gem 'sinatra'
-gem 'rake'
-
-group :test do
-  gem 'rspec'
-  gem 'rubocop-rspec'
-  gem 'rubocop'
-  gem 'coveralls', require: false
-  gem 'capybara'
-  # gem 'byebug'
-  gem 'pry-byebug'
-  gem 'rspec-sinatra'
-  gem 'simplecov', require: false
-end
-
-gem 'data_mapper'
-gem 'dm-postgres-adapter'
-gem 'shotgun'
-gem 'selenium-webdriver'
-gem 'poltergeist'
-gem 'pry'
-=======
 source 'http://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.3.3'
 
 gem 'rspec'
 gem 'capybara'
@@ -41,4 +14,4 @@ gem 'bcrypt'
 gem 'sinatra-flash'
 gem 'sinatra-partial'
 gem 'timecop'
->>>>>>> day5
+gem 'codecov', :require => false, :group => :test
